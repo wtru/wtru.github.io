@@ -230,6 +230,80 @@ a {
   display: block;
   font-weight: bold; }
 
+
+/*Added by me */
+.btn2 {
+  border-radius: 4px;
+  background-color:#3a6186;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  width: auto;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.btn2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btnForward:hover span {
+  padding-right: 25px;
+}
+
+.btnForward span:after {
+  content: '>>';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btnForward:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.btnBack:hover span {
+  padding-left: 25px;
+}
+
+.btnBack span:before {
+  content: '<<';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+
+.btnBack:hover span:before {
+  opacity: 1;
+  left: 0;
+}
+
+
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+
+/*end added by me*/
+
+
+
+
+
+
 .site-footer-credits {
   color: #819198; }
 
